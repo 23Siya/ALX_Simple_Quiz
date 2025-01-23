@@ -5,7 +5,7 @@ function checkAnswer() {
     const correctAnswer = "4";
     let userAnswer = document.querySelector('input[name="quiz"]:checked');
 
-   f (userAnswer === correctAnswer){
+   f (userAnswer.value === correctAnswer){
             feedback.textContent = "Correct! Well done.";
         }
         else {
