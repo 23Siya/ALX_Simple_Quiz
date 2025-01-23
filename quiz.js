@@ -11,7 +11,7 @@ function checkAnswer() {
     const feedback = document.getElementById('feedback');
 
     if (userAnswer) {
-        if (userAnswer.value === correctAnswer) {
+        if (userAnswer === correctAnswer) {
             feedback.textContent = "Correct! Well done.";
             
             feedback.textContent = "That's incorrect. Try again!";
