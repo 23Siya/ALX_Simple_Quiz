@@ -7,7 +7,7 @@ function checkAnswer() {
 
     if (userAnswer.value){
 
-        if (userAnswer.value == correctAnswer) {
+        if (userAnswer.value === correctAnswer) {
             feedback.textContent = "Correct! Well done.";
         }
         else {
