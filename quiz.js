@@ -2,11 +2,21 @@
 
 function checkAnswer() {
     // Function body
-     let correctAnswer= "4";
-     const userAnswer =document.querySelector('name');
+    const correctAnswer = "4";
+    let userAnswer = document.querySelector('name');
 
-   
+    if (userAnswer) {
+        if (userAnswer.value == correctAnswer) {
+            feedback.textContent = "Correct! Well done.";
+        }
+        else {
+            feedback.textContent = "That's incorrect. Try again!";
+        }
+    }
+    else {
+        feedback.textContent="please choose something";
+    }
 }
 
-// Add event listener to the submit button
-document.getElementById('submit_answer').addEventListener('click', checkAnswer);
+document.getElementById('submit-answer').addEventListener('click', checkAnswer);
+
