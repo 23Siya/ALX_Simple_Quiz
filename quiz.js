@@ -8,9 +8,9 @@ function checkAnswer() {
     const feedback = document.getElementById('feedback');
 
 
-    if (userAnswer.value){
+    if (userAnswer){
 
-        if (userAnswer.value == correctAnswer) {
+        if (userAnswer.value === correctAnswer) {
             feedback.textContent = "Correct! Well done.";
         }
         else {
