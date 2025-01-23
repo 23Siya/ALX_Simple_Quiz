@@ -10,7 +10,7 @@ function checkAnswer() {
     // Get the feedback element
     const feedback = document.getElementById('feedback');
 
-    if (userAnswer) {
+    if (userAnswer.value) {
         if (userAnswer === correctAnswer) {
             feedback.textContent = "Correct! Well done.";
             
